@@ -1,0 +1,6 @@
+BeautifulSoup==3.2.2
+html5lib==1.0.1
+mechanize==0.4.5
+pygame==1.9.6
+six==1.14.0
+webencodings==0.5.1
