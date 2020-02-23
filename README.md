@@ -2,7 +2,7 @@ studiVZ backup tool
 ===================
 
 Dieses Programm erstellt ein Backup der eigenen studiVZ-Daten.
-Mehr Infos gibts unter [http://itooktheredpill.dyndns.org/2011/goodbye-studivz/](http://itooktheredpill.dyndns.org/2011/goodbye-studivz/)
+Mehr Infos gibts unter [https://itooktheredpill.irgendwo.org/2011/goodbye-studivz/](https://itooktheredpill.irgendwo.org/2011/goodbye-studivz/)
 
 Wenn euch die Software gefällt bzw. nützt, freut sich der Autor über flattr:
 
