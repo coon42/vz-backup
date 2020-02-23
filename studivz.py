@@ -173,7 +173,7 @@ class DataException(Exception): pass
 class CaptchaException(Exception): pass
 
 class StudiVZ:
-    host = "http://www.studivz.net"
+    host = "https://www.studivz.net"
     recaptcha = None
     def __init__(self, mail, pw, config=None):
         self.mail = mail
