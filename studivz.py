@@ -223,11 +223,28 @@ class StudiVZ:
         br.form.controls.remove(br.form.find_control('recaptcha_response_field', type='hidden'))
         return br.submit()
 
+    def disable_ssl_certificate_verification(self):
+        import requests
+        requests.packages.urllib3.disable_warnings()
+
+        import ssl
+
+        try:
+            _create_unverified_https_context = ssl._create_unverified_context
+        except AttributeError:
+            # Legacy Python that doesn't verify HTTPS certificates by default
+            pass
+        else:
+            # Handle target environment that doesn't support HTTPS verification
+            ssl._create_default_https_context = _create_unverified_https_context
+
     def login(self):
         """
         fill out the login form and submit
         stores a reference to the browser in self.br
         """
+        self.disable_ssl_certificate_verification()
+
         br = Browser()
         br.set_handle_robots(False)
         br.open(self.host + "/Default")
