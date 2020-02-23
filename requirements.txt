@@ -1,6 +1,11 @@
 BeautifulSoup==3.2.2
+certifi==2019.11.28
+chardet==3.0.4
 html5lib==1.0.1
+idna==2.9
 mechanize==0.4.5
 pygame==1.9.6
+requests==2.23.0
 six==1.14.0
+urllib3==1.25.8
 webencodings==0.5.1
