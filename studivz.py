@@ -229,6 +229,7 @@ class StudiVZ:
         stores a reference to the browser in self.br
         """
         br = Browser()
+        br.set_handle_robots(False)
         br.open(self.host + "/Default")
         br.select_form(nr=0)
         self.br = br
